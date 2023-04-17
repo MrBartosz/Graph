@@ -1,0 +1,2 @@
+Aplikacja generuje wykres na podstawie danych wprowadzonych przez użytkownika za pomocą biblioteki Chart.js. 
+Użytkownik na bieżąco może wprowadzać dane do wygenerowania wykresu oraz wybrać typ wykresu, jaki ma zostać wyświetlony.

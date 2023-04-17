@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplikacja do tworzenia wykresów</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Aplikacja do tworzenia wykresów</h1>
+  <form class="type-container">
+    <label for="chartType">Typ wykresu: </label>
+    <select id="chartType">
+      <option value="line">Wykres liniowy</option>
+      <option value="bar">Wykres słupkowy</option>
+      <option value="pie">Wykres kołowy</option>
+      <option value="doughnut">Wykres pierścieniowy</option>
+      <option value="radar">Wykres radarowy</option>
+      <option value="scatter">Wykres punktowy</option>
+    </select>
+  </form>
+  <form class="input-container">
+    <label for="data">Dane do wykresu (oddzielone przecinkami):</label>
+    <input type="text" id="data" placeholder="np. 10,5,7,8,12">
+  </form>
+
+  <div class="button-container">
+    <button onclick="createChart()">Stwórz wykres</button>
+  </div>
+  <div class="canvas-container">
+    <canvas id="myChart" style="width: 95%; height: 400px;"></canvas>
+  </div>
+
+  <div class="delete-button-container">
+    <button id="deleteButton" onclick="deleteChart()">Usuń Wykres</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
